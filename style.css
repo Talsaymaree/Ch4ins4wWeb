@@ -1,0 +1,429 @@
+
+
+@font-face {
+  font-family: myFont;
+  src: url("font/elabfont.ttf")
+}
+
+@font-face {
+  font-family: rzr;
+  src: url("font/RazerBlackwidow-Regular.ttf")
+}
+
+.nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:40px;
+  text-decoration: none;
+  color: black;
+  font-family: myFont;
+  font-size:  60px;
+}
+#previous{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 25%;
+  margin-bottom: 2px;
+  left:0;
+  top: 20px;
+}
+h1{
+  position: relative;
+  text-align: center;
+  font-family: myFont;
+  font-size: 100px;
+  background-color:  transparent;
+  margin-top: -45px;
+}
+
+#next{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right:0;
+  top: 20px;
+  margin-right: 25%;
+  margin-bottom: 2px;
+}
+#container {
+  font-family: sans-serif;
+  background-color:  #FDFBFD;
+  background-image: url("images/shuriken.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:  center;
+}
+
+#formcontainer{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 120px;
+  font-family: sans-serif;
+}
+
+#mplayer{
+  position: absolute;
+  bottom: 0;
+  right:25%;
+  left:49%;
+  margin-left:-275px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+#icon {
+  position: absolute;
+  bottom: 0;
+  right:75%;
+  left:76%;
+  margin-left:-275px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+
+#icon1 {
+  position: absolute;
+  bottom: 0;
+  right:75%;
+  left:77.5%;
+  margin-left:-275px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+
+#icon2 {
+  position: absolute;
+  bottom: 0;
+  right:75%;
+  left:79%;
+  margin-left:-275px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+#icon3 {
+  position: absolute;
+  bottom: 0;
+  right:75%;
+  left:80.5%;
+  margin-left:-275px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+#icon4 {
+  position: absolute;
+  bottom: 0;
+  right:75%;
+  left:82%;
+  margin-left:-275px;
+  vertical-align: middle;
+  width: 20px;
+  margin-bottom: 3px;
+}
+p.anything{
+  text-align: center;
+  font-family: rzr;
+  font-size: 15px;
+  position: inline;
+  background-color:  transparent;
+  line-height: 1.5;
+
+}
+#about{
+  text-align: center;
+}
+
+
+.video{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.center {
+  width: 50%;
+  height: 40%;
+}
+
+#intro{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  top: 15%;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+#tunnel{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#sand{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+#galactic{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  overflow: hidden;
+}
+body{
+  background-color:  #FDFBFD;
+}
+.finger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16em;
+  animation: in-out 1.5s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes in-out {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.75);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
+#bodyflow{
+  overflow: hidden;
+}
+#bod {
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  position: absolute;
+  overflow: hidden;
+  /*cursor: none;*/
+  background-color: black;
+}
+.opa {
+  animation: flickr 6s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+canvas {
+  animation: floatting 10s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes floatting {
+  0%,
+  100% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes flickr {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate3d(-5px, 0px, 0);
+  }
+  25%,75% {
+     opacity: 1;
+  }
+  50% {
+    opacity: .5;
+    transform: translate3d(5px, 0px, 0);
+  }
+}
+
+#bo{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  position: absolute;
+  overflow: hidden;
+  background: #1D1F20;
+}
+#flower{
+  margin: 0; padding: 0;
+
+}
+
+@media screen and (max-width:1000px){
+ #footer{
+   width:100%
+ }
+
+ h1{
+   position: relative;
+   
+   top:45px;
+  text-align: center;
+  font-family: myFont;
+  font-size: 40px;
+  background-color:  transparent;
+
+}
+#previous{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top:20px;
+  left:0;
+  margin-left: 1%;
+}
+
+#next{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right:0;
+  top:20px;
+  margin-right: 1%;
+
+}
+
+#icon {
+  position: absolute;
+  bottom: 0;
+  margin-left:17%;
+  vertical-align: none;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+
+#icon1 {
+  position: absolute;
+  bottom: 0;
+  right:0px;
+  margin-left:10%;
+  vertical-align: none;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+
+#icon2 {
+  position: absolute;
+  bottom: 0;
+  margin-left:3%;
+  vertical-align: none;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+#icon3 {
+  position: absolute;
+  bottom: 0;
+  margin-left:-4%;
+  vertical-align: none;
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+#icon4 {
+  position: absolute;
+  bottom: 0;
+  margin-left:-11%;
+  vertical-align: none;
+  width: 20px;
+  margin-bottom: 3px;
+}
+#mplayer{
+  position: absolute;
+  bottom: 0;
+  right:25%;
+  left:0;
+  margin-left:7px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  width: 25%;
+}
+
+#intro{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  top: 0%;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+.center {
+  padding-top: 20%;
+  width: 100%;
+  height: 25%;
+  padding-bottom: 20%;
+}
+p.anything{
+  font-family: rzr;
+  font-size: 10px;
+  position: inline;
+  background-color:  transparent;
+  line-height: 1.5;
+  left:0;
+}
+.nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:15px;
+  text-decoration: none;
+  color: black;
+  font-family: myFont;
+  font-size:  24px;
+}
+
+#about{
+  padding-top: 20%;
+  font-family: rzr;
+  font-size: 10px;
+  position: inline;
+  background-color:  transparent;
+  line-height: 1.5;
+  left:0;
+}
+
+}
