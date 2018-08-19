@@ -8,13 +8,13 @@ and open the template in the editor.
 <head>
   <link rel="shortcut icon" type="image/png" href="icons/kp1.png">
   <link rel="stylesheet" href="style.css" type="text/css"/>
-  <title>About</title>
+  <title>Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div  id="formcontainer">
-    <form action="mailto:xxch4ins4wxx@gmail.com" method="post" enctype="text/plain">
+  <div id="formcontainer">
+    <form name="contactform" method="post" action="send_form_email.php">
       Name:
       <input type="text" name="name"><br>
       <br>
@@ -23,9 +23,9 @@ and open the template in the editor.
       <br>
       <label for="subject"></label>
       Subject:<br><br>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px; width: 600px;"></textarea>
+      <textarea id="subject" name="subject" placeholder="Your Message goes here.." style="height:300px; width: 600px;"></textarea>
       <br>
-      <input type="submit" value="Send">
+      <input type="submit" value="Submit">
       <input type="reset" value="Reset">
     </form>
   </div>

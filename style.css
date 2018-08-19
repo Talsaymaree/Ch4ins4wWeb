@@ -28,6 +28,15 @@
   font-family: myFont;
   font-size:  60px;
 }
+#demo{
+  font-family: myFont;
+  display:inline-block;
+  padding:40px;
+  text-decoration: none;
+  color: black;
+  font-family: myFont;
+  font-size:  200px;
+}
 #previous{
   position: absolute;
   width: 30px;
@@ -45,9 +54,20 @@ h1{
   background-color:  transparent;
   margin-top: -45px;
 }
+#slp{
+ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 880px; 
+  margin-top: -84px;
+}
 #threed{
   padding-top: 2%;
-   width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
    height: 660px; 
 }
 #next{
@@ -57,6 +77,15 @@ h1{
   right:0;
   top: 20px;
   margin-right: 20%;
+  margin-bottom: 2px;
+}
+#home{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right:0;
+  top: 20px;
+  margin-right: 3%;
   margin-bottom: 2px;
 }
 #container {
@@ -195,10 +224,10 @@ p.anything{
   overflow: hidden;
 }
 #galactic{
-  top: 60px;
+  top: 65px;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 89%;
   position: absolute;
   overflow: hidden;
 }
@@ -213,6 +242,7 @@ body{
   font-size: 16em;
   animation: in-out 1.5s ease-in-out infinite;
   z-index: 1;
+  
 }
 @keyframes in-out {
   0% {
@@ -288,6 +318,33 @@ canvas {
 }
 
 @media screen and (max-width:1000px){
+  #galactic{
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 84%;
+    position: absolute;
+    overflow: hidden;
+
+  }
+  #threed{
+    padding-top: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+     height: 30%; 
+
+  }
+  #slp{
+    padding-top: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+     height: 30%; 
+     margin-top: 20%;
+  }
  #footer{
    width:100%
  }
@@ -295,32 +352,40 @@ canvas {
  h1{
    position: relative;
    
-   top:45px;
+   top:48px;
   text-align: center;
   font-family: myFont;
-  font-size: 40px;
+  font-size: 24px;
   background-color:  transparent;
 
 }
 #previous{
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top:20px;
+  width: 25px;
+  height: 25px;
+  top:18px;
   left:0;
   margin-left: 1%;
 }
 
 #next{
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   right:0;
-  top:20px;
+  top:18px;
   margin-right: 1%;
 
 }
+#home{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  right:0;
+  top:18px;
+  margin-right: 10%;
 
+}
 #icon {
   position: absolute;
   bottom: 0;
